@@ -29,9 +29,22 @@ def func2(param1, param2):
 
 # -------
 
-# define a function that returns a value
-# LEFT OFF 4:49
+# 5. define a function that returns a value
+#def cube(x):
+#  return(x*x*x);
+#print(cube(3));
 
+# 6. function with default value for parameter
+def power(num, x=1):
+  result = 1;
+  for i in range(x):
+    result = result * num;
+  return(result);
 
+print(power(2));
+print(power(2,3));
+print(power(x=3, num=2)); # can reverse the order of the arguments sent when done in this manner.
+
+# left off at 8:20
 
 
