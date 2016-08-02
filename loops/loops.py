@@ -2,8 +2,11 @@
 # File: /home/cgarndt/Python/Lyndadotcom-upandrunningwithpython/loops.py
 
 # Index
+#   * Python uses two types of looping constructs called FOR and WHILE.
 #   1. Define a While loop
+#      b. WHILE loop in Fibonacci series.
 #   2. Define a For loop
+#      b. FOR loop ... read lines from a file. FOR loops uses interaters.
 #   3. Use a For loop over a collection.
 #   4. Use the BREAK and CONTINUE statements
 #   5. Using the enumerate() function to get index
@@ -17,12 +20,28 @@ def main():
 #     print(x);
 #     x = x + 1;
 #=> ... prints 0,1,2,3,4
+#
+#   1b. WHILE loop in Fibonacci series.
+#   a, b = 0, 1
+#   while b < 50:
+#     print(b);
+#     a, b = b, a + b;
+#   print('Done.');
+#=> ... prints 1,1,2,3,5,8,13,21,34,Done.
   
   # 2. Define a For loop
   #   - python For loops are what are called "iterators". Need to use range().
 #   for x in range(5,10):
 #     print(x);
 #=> ... prints 5,6,7,8,9 and excludes 10.
+#
+# 2b. FOR loop ... read lines from a file. FOR loops uses interaters.
+  # read the lines from the file
+#  fh = open('lines.txt');
+#  for line in fh.readlines():
+#    print(line); # print puts a new line at the end or line break.
+    # OR to not have print add line breaks then add "end=''"
+#    print(line, end='');
 
 #   3. Use a For loop over a collection.
 #        * the FOR loop does not have a counter.
@@ -44,12 +63,12 @@ def main():
 # 5. Using the enumerate() function to get index
 #      * Yes the FOR loop does not have a counter BUT you can get one if you really need it.
 #      * So
-  days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
-  # The enumerate function is going to iterate over days collection AND return the value
-  # of the item being looked at in addition to returning the index of the item in question.
-  # So the function returns two values.
-  for i, d in enumerate(days):
-    print(i, d);
+#   days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+#   # The enumerate function is going to iterate over days collection AND return the value
+#   # of the item being looked at in addition to returning the index of the item in question.
+#   # So the function returns two values.
+#   for i, d in enumerate(days):
+#     print(i, d);
 
 
 if(__name__ == "__main__"):

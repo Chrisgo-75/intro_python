@@ -10,12 +10,13 @@
 #   5. Define a function that returns a value
 #   6. Function with default value for parameter
 #   7. Function with variable number of arguments
+#   8. Quick Start Example: Checking if a number is a prime number or not
 
 # ---
 
 # define a function
-def func1():
-  print('I am a function');
+# def func1():
+#   print('I am a function');
 
 # 1. simply calls func1
 #func1();
@@ -32,11 +33,11 @@ def func1():
 # -------
 
 # function that takes parameters
-def func2(param1, param2):
-  print(param1, " ", param2);
+# def func2(param1, param2):
+#   print(param1, " ", param2);
 
 # 4. function that takes parameters
-func2(10,20);
+# func2(10,20);
 #print(func2(10,20));
 
 # -------
@@ -67,4 +68,33 @@ def multi_add(*args):
 # 
 # print(multi_add(4,5,10,4));
 # => 23
+
+
+# 8. Quick Start Example: Checking if a number is a prime number or not
+def isprime(n):
+  if n ==1:
+    print('1 is special');
+    return False;
+  for x in range(2,n):
+    if n % x == 0:
+      print("{} equals {} x {}".format(n, x, n // x));
+      return False;
+  else:
+    print(n, 'is a prime number');
+    return True;
+# Call above function in a FOR loop
+# for n in range(1,20):
+#   isprime(n);
+#=> ... below
+#     1 is special
+#     2 is a prime number
+#     3 is a prime number
+#     4 equals 2 x 2 # 4 is not a prime numb b/c it is devisible evenly by 2.
+#     5 is a prime number
+#     6 equals 2 x 3
+#     ...and so on up to 19.
+
+
+
+
 
