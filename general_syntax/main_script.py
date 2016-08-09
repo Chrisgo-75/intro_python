@@ -11,7 +11,9 @@
 #   a. Before Python runs any code, Python creates a few special variables.
 #   b. "name" is one of those special variables.
 #   c. When Python runs a Python file DIRECTLY, it sets this "__name__" variable to __main__.
-#   d. 
+#   d. FYI - any statements (i.e. print()) that are not in a function will get executed first. These
+#            statements get printed first before "main" function is called.
+#   e. 
 #
 #print("First Module's Name: {}".format(__name__))
 # => First Module's Name: __main__
@@ -21,6 +23,7 @@
 #   a. Use if you want to run code when this file is called directly.
 #   b. Very common line written in Python.
 print('This print statement will always be called. No matter if this file is called directly or imported.')
+
 def main():
   print('main_script.py was called directly.')
 
