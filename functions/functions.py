@@ -11,6 +11,9 @@
 #   6. Function with default value for parameter
 #   7. Function with variable number of arguments
 #   8. Quick Start Example: Checking if a number is a prime number or not
+#   9. Have a parameter value within a function be assigned a value by default
+#        i.e. def func(a=7):
+#   10. 
 
 # ---
 

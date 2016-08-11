@@ -2,7 +2,7 @@
 # File: /home/cgarndt/Python/Lyndadotcom-upandrunningwithpython/conditionals.py
 
 # Index
-#   1. IF ELIF ELSE statement 
+#   1. IF ELIF ELSE statement (two examples so far...)
 #   2. Rewrite of #1 as a conditional statement all in one line.
 #   3. Using curly braces which will be replaced by the values in the format.
 #   4. Conditional - Short IF statement
@@ -11,7 +11,17 @@
 def main():
   x, y = 100, 100
   
-# 1. Option A: IF ELIF ELSE statement
+# 1. IF ELIF ELSE statement
+#   Example A
+#   a, b = 2, 1
+#   if a < b:
+#     print("a is less than b")
+#   elif a > b:
+#     print("a is greater than b")
+#   else:
+#     print("a is equal to b")
+#
+#   Example B
 #   if(x < y):
 #     st = 'x is less than y';
 #   elif(x == y):
