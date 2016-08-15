@@ -4,11 +4,14 @@
 # Index
 #   * Python uses two types of looping constructs called FOR and WHILE.
 #   1. Define a While loop
-#      b. WHILE loop in Fibonacci series.
+#      b. WHILE loop in Fibonacci series. (else can be used in a while loop).
 #   2. Define a For loop
 #      b. FOR loop ... read lines from a file. FOR loops uses interaters.
 #   3. Use a For loop over a collection.
 #   4. Use the BREAK and CONTINUE statements
+#      b. CONTINUE: Skip printing "S"s via the "continue" statement
+#      c. BREAK: STOP or BREAK out of the loop entirely by using the BREAK statement
+#      d. ELSE: At the end of the looping then do the else clause.
 #   5. Using the enumerate() function to get index
 #
 
@@ -59,7 +62,23 @@ def main():
 #     # continue which means don't do print statement but go back to the start of the loop.
 #     # So in essence, don't print on even numbers.
 #     print(x);
-
+# 4b. Skip printing "S"s via the "continue" statement
+#   s = 'this is a string'
+#   for c in s:
+#     if c == 's': continue # if c == 's' then skip the print statement/go to FOR statement.
+#     print(c, end='')
+# 4c. STOP or BREAK out of the loop entirely by using the BREAK statement
+#   s = 'this is a string'
+#   for c in s:
+#     if c == 's': break
+#     print(c, end='')
+# 4d. ELSE: At the end of the looping then do the else clause.
+#   s = 'this is a string'
+#   for c in s:
+#     print(c, end='')
+#   else:
+#     print('else')
+#
 # 5. Using the enumerate() function to get index
 #      * Yes the FOR loop does not have a counter BUT you can get one if you really need it.
 #      * So
