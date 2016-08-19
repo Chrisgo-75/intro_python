@@ -9,11 +9,20 @@
 #   4. Function that takes parameters
 #   5. Define a function that returns a value
 #   6. Function with default value for parameter
+#        a. You can also assign "none" as a default value.
+#           - "none" is a special value that you can test for.
+#              IF param1 is None:
+#                param1 = 9
+#        b. state parameter as "incoming optional arguments". (i.e. below)
 #   7. Function with variable number of arguments
+#      7b. Function with optional incoming arguments.
 #   8. Quick Start Example: Checking if a number is a prime number or not
 #   9. Have a parameter value within a function be assigned a value by default
 #        i.e. def func(a=7):
-#   10. 
+#   10. Valid empty function that will not raise Python errors.
+#   11. Named arguments example ... Yes!!!
+#       - **kwargs is a "dictionary".
+#   12. 
 
 # ---
 
@@ -61,6 +70,7 @@ def power(num, x=1):
 # print(power(2,3));
 # print(power(x=3, num=2)); # can reverse the order of the arguments sent when done in this manner.
 
+
 # 7. function with variable number of arguments
 #      - the star in "*args" means that I can pass in a variable number of arguments.
 def multi_add(*args):
@@ -71,6 +81,17 @@ def multi_add(*args):
 # 
 # print(multi_add(4,5,10,4));
 # => 23
+#
+# 7b. Function with optional incoming arguments.
+def testfunc(*args):
+  print('Function example with optional incoming arguments:')
+  print(args)
+  # could also iterate over args by
+  # for n in args: print(n, end='  ')
+# call testfunc
+#testfunc(1,3,5)
+#=> (1, 3, 5)  # displays normal tuple which is "immutable" ... can't add/change it.
+#print()
 
 
 # 8. Quick Start Example: Checking if a number is a prime number or not
@@ -96,6 +117,22 @@ def isprime(n):
 #     5 is a prime number
 #     6 equals 2 x 3
 #     ...and so on up to 19.
+
+# 10. Valid empty function that will not raise Python errors.
+def validemptyfunc():
+  pass
+# call above function.
+# validemptyfunc()
+
+# 11. Named arguments example ... Yes!!!
+def testfunc(**kwargs):
+  # kwargs is a "dictionary".
+  print('Named arguments example:')
+  #TODO edit below to show print kwards['one'] AND THEN its value.
+  print(kwargs['one'], kwargs['two'], kwargs['four'])
+
+testfunc(one = 1, two = 2, four = 42)
+print()
 
 
 
