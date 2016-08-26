@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # simple fibonacci series
-# the sum of two element sdefines the next set
+# the sum of two elements defines the next set
 # Tid bits of info
 #   * All methods within a class have self as the first argument. It's not required BUT
 #     it's a really, really good idea to always call it self.
